@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCISSOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-container">
+                <div class="heading">
+                    <h1>ROCK</h1>
+                    <h1>PAPER</h1>
+                    <h1>SCISSOR</h1>
+                </div>
+                <div class="score-section">
+                    <div class="your-score">
+                        <p>YOUR <br> SCORE</p>
+                        <h2 id="userScore">0</h2>
+                    </div>
+                    <div class="computer-score">
+                        <p>COMPUTER <br> SCORE</p>
+                        <h2 id="computerScore">0</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="main">
+                <div class="play-section" id="playSection">
+
+                    <div class="hands rock" id="rock" data-value="rock">
+                        <img src="Images/rock.png" alt="rock image">
+                    </div>
+                    <div class="line line1"></div>
+                    <div class="hands scissors" id="scissors" data-value="scissors">
+                        <img src="Images/scissors.png" alt="scissor image">
+                    </div>
+
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+
+                    <div class=" hands paper" id="paper" data-value="paper">
+                        <img src="Images/paper.png" alt="papper image">
+                    </div>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="result-screen">
+                    <div class="your-pick">
+                        <p>YOU PICKED</p>
+                        <div class="result-hand win-animation" id="user">
+                            <img src="Images/paper.png" alt="" id="userChoiceImage">
+                        </div>
+                    </div>
+                    <div class="result">
+                        <h1 id="winner">TIE UP</h1>
+                        <h5>AGAINST PC</h5>
+                        <button id="play-again">PLAY AGAIN</button>
+                    </div>
+                    <div class="pc-pick">
+                        <p>PC PICKED</p>
+
+                        <div class="result-hand  win-animation" id="pc">
+                            <img src="Images/paper.png" alt="" id="pcChoiceImage">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="rule-container">
+                    <div class="rule-box">
+                        <div class="rule-header">
+                            <p>Game Rules</p>
+                        </div>
+                        <div class="close-btn">
+                            <img src="Images/close.png" alt="close" />
+                        </div>
+                        <div class="rule-content">
+                            <ul>
+                                <li class="list-item">
+                                    Rock beats scissors, scissors beat paper, and paper beats rock.
+                                </li>
+                                <li class="list-item">
+                                    Agree ahead of time whether you’ll count off “rock, paper,
+                                    scissors, shoot” or just “rock, paper, scissors.”
+                                </li>
+                                <li class="list-item">
+                                    Use rock, paper, scissors to settle minor decisions or simply play
+                                    to pass the time
+                                </li>
+                                <li class="list-item">
+                                    If both players lay down the same hand, each player lays down
+                                    another hand
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="rule-btn rule">RULES</button>
+                    <a href="celebration.html" class="rule-btn" id="next-btn">NEXT</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>
